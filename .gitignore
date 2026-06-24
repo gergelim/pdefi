@@ -1,5 +1,6 @@
 # Built application files
 *.apk
+!pdefi.apk
 *.aar
 *.ap_
 *.aab

@@ -22,7 +22,9 @@ Interface **neo-skeuomórfica** com:
 
 ## Download APK
 
-> Veja a aba [Releases](../../releases) para baixar o APK mais recente.
+> Você pode baixar o arquivo APK diretamente deste repositório clicando aqui: [pdefi.apk](./pdefi.apk)
+> 
+> Após baixar, transfira para o seu dispositivo Android e instale. Lembre-se de permitir a instalação de fontes desconhecidas nas configurações de segurança do seu aparelho.
 
 ## Build
 
