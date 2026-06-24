@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single PDF page item for ViewPager2 -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/reader_bg">
+
+    <!-- Page shadow/frame (neo-skeuomorphic border) -->
+    <FrameLayout
+        android:id="@+id/pageFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@color/reader_bg">
+
+        <!-- Actual PDF page rendered bitmap -->
+        <com.pdefi.ZoomableImageView
+            android:id="@+id/ivPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:background="@color/reader_bg"
+            android:adjustViewBounds="true" />
+
+        <!-- Loading spinner overlay -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/accent_gold"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+</FrameLayout>

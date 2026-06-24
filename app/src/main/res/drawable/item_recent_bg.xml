@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Recent file item background with left gold accent via separate layer -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <solid android:color="#15C9A84C" />
+            <stroke android:width="1dp" android:color="#30C9A84C" />
+        </shape>
+    </item>
+
+    <item>
+        <layer-list>
+            <!-- Main background -->
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="10dp" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="180"
+                        android:startColor="#201E2A48"
+                        android:endColor="#181628" />
+                    <stroke android:width="1dp" android:color="#25304A" />
+                </shape>
+            </item>
+            <!-- Left accent bar: 4dp wide gold stripe -->
+            <item android:right="9999dp">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="10dp" android:bottomLeftRadius="10dp"
+                        android:topRightRadius="0dp" android:bottomRightRadius="0dp" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="270"
+                        android:startColor="#E8CC6A"
+                        android:endColor="#8A6820" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

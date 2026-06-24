@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Neo-skeuomorphic primary button with 3D raised effect -->
+<!-- NOTE: % values not valid in layer-list items; specular built into gradient -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- PRESSED state: sunken effect -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <!-- Ambient shadow reduced -->
+            <item android:top="1dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="12dp" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="270"
+                        android:startColor="#0F1530"
+                        android:centerColor="#141C3C"
+                        android:centerX="0.5"
+                        android:endColor="#1A2550" />
+                    <stroke android:width="1dp" android:color="#0A0F22" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- FOCUSED state -->
+    <item android:state_focused="true">
+        <layer-list>
+            <!-- Gold glow border -->
+            <item android:top="-3dp" android:left="-3dp" android:right="-3dp" android:bottom="-3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="14dp" />
+                    <solid android:color="#80C9A84C" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="12dp" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="270"
+                        android:startColor="#4A5A9A"
+                        android:centerColor="#2E3D78"
+                        android:endColor="#141F45" />
+                    <stroke android:width="1dp" android:color="#5060A0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- NORMAL state: raised 3D button with specular built into gradient -->
+    <item>
+        <layer-list>
+            <!-- Outer ambient shadow -->
+            <item android:top="4dp" android:left="1dp" android:right="1dp" android:bottom="-4dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="13dp" />
+                    <solid android:color="#55050810" />
+                </shape>
+            </item>
+            <!-- Hard drop shadow (offset right+bottom) -->
+            <item android:top="2dp" android:left="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="12dp" />
+                    <solid android:color="#330A1028" />
+                </shape>
+            </item>
+            <!-- Main button: 4-stop gradient top highlight → mid body → dark bottom -->
+            <item android:bottom="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="12dp" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="270"
+                        android:startColor="#546098"
+                        android:centerColor="#2E3D78"
+                        android:centerX="0.35"
+                        android:endColor="#141F45" />
+                    <stroke android:width="1dp" android:color="#405088" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

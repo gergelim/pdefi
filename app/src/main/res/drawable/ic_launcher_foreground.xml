@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App launcher icon: stylized open book - simplified for API 21+ compatibility -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background circle -->
+    <path
+        android:pathData="M54,54m-54,0a54,54 0,1 1,108 0a54,54 0,1 1,-108 0"
+        android:fillColor="#141728" />
+
+    <!-- Outer gold ring -->
+    <path
+        android:pathData="M54,54m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0"
+        android:fillColor="#00000000"
+        android:strokeColor="#C9A84C"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.5" />
+
+    <!-- Book spine (gold bar) -->
+    <path
+        android:pathData="M50,28 L56,28 L56,80 L50,80 Z"
+        android:fillColor="#C9A84C" />
+
+    <!-- Book spine highlight -->
+    <path
+        android:pathData="M50,28 L52,28 L52,80 L50,80 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.3" />
+
+    <!-- Left page block -->
+    <path
+        android:pathData="M22,32 L50,28 L50,80 L22,76 Z"
+        android:fillColor="#F0EDD8" />
+
+    <!-- Left page lines -->
+    <path android:pathData="M26,38 L47,35" android:strokeColor="#C0B090" android:strokeWidth="1.2" />
+    <path android:pathData="M26,44 L47,41" android:strokeColor="#C0B090" android:strokeWidth="1.0" />
+    <path android:pathData="M26,50 L47,47" android:strokeColor="#C0B090" android:strokeWidth="1.0" />
+    <path android:pathData="M26,56 L47,53" android:strokeColor="#C0B090" android:strokeWidth="1.0" />
+    <path android:pathData="M26,62 L47,59" android:strokeColor="#C0B090" android:strokeWidth="1.0" />
+    <path android:pathData="M26,68 L47,65" android:strokeColor="#C0B090" android:strokeWidth="1.0" />
+
+    <!-- Right page block -->
+    <path
+        android:pathData="M56,28 L86,32 L86,76 L56,80 Z"
+        android:fillColor="#E8E4CC" />
+
+    <!-- Right page lines -->
+    <path android:pathData="M61,35 L82,38" android:strokeColor="#B0A880" android:strokeWidth="1.2" />
+    <path android:pathData="M61,41 L82,44" android:strokeColor="#B0A880" android:strokeWidth="1.0" />
+    <path android:pathData="M61,47 L82,50" android:strokeColor="#B0A880" android:strokeWidth="1.0" />
+    <path android:pathData="M61,53 L82,56" android:strokeColor="#B0A880" android:strokeWidth="1.0" />
+    <path android:pathData="M61,59 L82,62" android:strokeColor="#B0A880" android:strokeWidth="1.0" />
+    <path android:pathData="M61,65 L82,68" android:strokeColor="#B0A880" android:strokeWidth="1.0" />
+
+    <!-- Page edge inner shadow -->
+    <path
+        android:pathData="M47,28 L50,28 L50,80 L47,80 Z"
+        android:fillColor="#000000"
+        android:fillAlpha="0.12" />
+
+    <!-- Top edge highlight -->
+    <path
+        android:pathData="M22,32 L86,32 L86,35 L22,35 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.08" />
+
+</vector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gold vertical accent bar -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="2dp" />
+    <gradient
+        android:type="linear"
+        android:angle="270"
+        android:startColor="#E8CC6A"
+        android:endColor="#8A6820" />
+</shape>

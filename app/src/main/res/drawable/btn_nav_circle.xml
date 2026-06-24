@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Small circular nav button: prev/next page -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- PRESSED -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#0F1530" />
+            <stroke android:width="1dp" android:color="#0A0F22" />
+        </shape>
+    </item>
+
+    <!-- DISABLED -->
+    <item android:state_enabled="false">
+        <shape android:shape="oval">
+            <solid android:color="#0A1020" />
+            <stroke android:width="1dp" android:color="#1A2240" />
+        </shape>
+    </item>
+
+    <!-- NORMAL: raised circular button with specular in gradient -->
+    <item>
+        <layer-list>
+            <!-- Drop shadow offset -->
+            <item android:top="2dp" android:left="1dp" android:right="-1dp" android:bottom="-3dp">
+                <shape android:shape="oval">
+                    <solid android:color="#77050810" />
+                </shape>
+            </item>
+            <!-- Ambient shadow -->
+            <item android:top="1dp" android:bottom="-2dp">
+                <shape android:shape="oval">
+                    <solid android:color="#44050810" />
+                </shape>
+            </item>
+            <!-- Main body: top highlight → mid → dark bottom -->
+            <item android:bottom="2dp">
+                <shape android:shape="oval">
+                    <gradient
+                        android:type="linear"
+                        android:angle="270"
+                        android:startColor="#404888"
+                        android:centerColor="#283568"
+                        android:centerX="0.4"
+                        android:endColor="#141F45" />
+                    <stroke android:width="1dp" android:color="#404880" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

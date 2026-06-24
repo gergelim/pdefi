@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reader control bar: frosted dark glass -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Semi-transparent dark base -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E0080F22" />
+        </shape>
+    </item>
+    <!-- Subtle gradient overlay for depth - bright top, fades down -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#20253858"
+                android:endColor="#08000000" />
+        </shape>
+    </item>
+</layer-list>

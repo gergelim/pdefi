@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">pdefi</string>
+    <string name="open_pdf">Abrir PDF</string>
+    <string name="recent_files">Recentes</string>
+    <string name="no_recent">Nenhum arquivo recente</string>
+    <string name="page_of">Página %1$d de %2$d</string>
+    <string name="error_open">Não foi possível abrir o arquivo</string>
+    <string name="error_render">Erro ao renderizar página</string>
+    <string name="go_to_page">Ir para página</string>
+    <string name="close_reader">Fechar</string>
+    <string name="prev_page">Página anterior</string>
+    <string name="next_page">Próxima página</string>
+    <string name="tap_to_show">Toque para mostrar controles</string>
+    <string name="file_picker_title">Selecionar PDF</string>
+    <string name="permission_required">Permissão de armazenamento necessária</string>
+</resources>

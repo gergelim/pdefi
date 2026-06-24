@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Application Theme - no ActionBar by default -->
+    <style name="Theme.Pdefi" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_gold</item>
+        <item name="colorPrimaryVariant">@color/accent_gold_dark</item>
+        <item name="colorOnPrimary">@color/bg_deep</item>
+        <item name="colorSecondary">@color/btn_top</item>
+        <item name="colorSecondaryVariant">@color/btn_bottom</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="android:colorBackground">@color/bg_deep</item>
+        <item name="android:windowBackground">@color/bg_deep</item>
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/status_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Full immersive theme for Reader -->
+    <style name="Theme.Pdefi.Reader" parent="Theme.Pdefi">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">@color/reader_bg</item>
+        <item name="android:navigationBarColor">@color/reader_bg</item>
+    </style>
+
+    <!-- Neo-skeuomorphic button style -->
+    <style name="Widget.Pdefi.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/btn_primary</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:paddingStart">28dp</item>
+        <item name="android:paddingEnd">28dp</item>
+        <item name="android:elevation">6dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="rippleColor">@color/specular_mid</item>
+    </style>
+
+    <!-- Small nav button style -->
+    <style name="Widget.Pdefi.NavButton" parent="Widget.Pdefi.Button">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+    </style>
+
+    <!-- Panel card style -->
+    <style name="Widget.Pdefi.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/surface_raised</item>
+        <item name="cardElevation">12dp</item>
+        <item name="cardCornerRadius">16dp</item>
+    </style>
+
+</resources>
